@@ -1,4 +1,4 @@
-package edu.swjtu.finderapp.server.pojo;
+package edu.swjtu.finderapp.pojo;
 
 import javax.persistence.*;
 
@@ -11,12 +11,26 @@ public class User {
     private String user_name;
     private String user_password;
     private String user_phone;
+    private String user_pic_path;
 
     public  User(){}
-    public User(String user_name, String user_password, String user_phone) {
+
+    public String getUser_pic_path() {
+        return user_pic_path;
+    }
+
+    public void setUser_pic_path(String user_pic_path) {
+        if(user_pic_path!=null)
+            this.user_pic_path = user_pic_path;
+        else
+            this.user_pic_path = "null";
+    }
+
+    public User(String user_name, String user_password, String user_phone, String user_pic_path) {
         this.user_name = user_name;
         this.user_password = user_password;
         this.user_phone = user_phone;
+        this.user_pic_path = user_pic_path;
     }
 
     public void setUser_id(Long user_id) {

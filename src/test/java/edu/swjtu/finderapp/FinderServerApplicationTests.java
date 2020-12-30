@@ -1,7 +1,7 @@
-package edu.swjtu.finderapp.server;
+package edu.swjtu.finderapp;
 
-import edu.swjtu.finderapp.server.dao.UserRepository;
-import edu.swjtu.finderapp.server.pojo.User;
+import edu.swjtu.finderapp.dao.UserRepository;
+import edu.swjtu.finderapp.pojo.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,7 +15,7 @@ class FinderServerApplicationTests {
     @Test
     void contextLoads() {
 
-        User user = new User("lxd","1234","12853254");
+        User user = new User("lxd","1234","12853254",null);
         userRepository.save(user);
     }
 
