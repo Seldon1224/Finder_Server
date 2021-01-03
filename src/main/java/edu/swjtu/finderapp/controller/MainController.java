@@ -31,6 +31,7 @@ public class MainController {
         this.fileUpAndDownService = fileUpAndDownService;
     }
 
+
     @GetMapping("/signup")
     public String GetSignupView(Model model) {
         model.addAttribute("user", new User());

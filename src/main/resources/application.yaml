@@ -18,8 +18,3 @@ spring:
     username: seldon
     password: sEd6SLBEnyLbrJWD
 
-  mvc:
-    static-path-pattern: /user_pic/**
-
-  resources:
-    static-locations: file:./file_upload
