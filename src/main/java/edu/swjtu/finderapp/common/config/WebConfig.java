@@ -13,14 +13,11 @@ public class WebConfig implements WebMvcConfigurer {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         //和页面有关的静态目录都放在项目的static目录下
         registry.addResourceHandler("/static/**").addResourceLocations("classpath:/static/");
-        registry.addResourceHandler("/user_pic/**").addResourceLocations("file:./file_upload");
+        registry.addResourceHandler("/**").addResourceLocations("file:./file_upload");
     }
 
 
 
-    @Override
-    public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName("login");
-    }
+
 }
 

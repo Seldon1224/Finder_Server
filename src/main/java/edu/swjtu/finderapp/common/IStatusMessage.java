@@ -1,8 +1,6 @@
 package edu.swjtu.finderapp.common;
 
 public interface IStatusMessage {
-
-
     String getCode();
     String getMessage();
 
