@@ -68,7 +68,7 @@
         return true;
     }
     function upload() {
-        var formData = new FormData($("#formId")[0]);
+        const formData = new FormData($("#formId")[0]);
         $.ajax({
             url: url,
             type: 'post',

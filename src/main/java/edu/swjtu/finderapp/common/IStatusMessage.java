@@ -18,8 +18,8 @@ public interface IStatusMessage {
         LOGIN_NO_USER("1009","用户不存在,登录失败");
 
 
-        private String code;
-        private String message;
+        private final String code;
+        private final String message;
 
         SystemStatus(String code, String message) {
             this.code = code;

@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "spring.thymeleaf.devtools.restart.additional-paths",
+      "type": "java.lang.String",
+      "description": "Description for spring.thymeleaf.devtools.restart.additional-paths."
+    },
+    {
+      "name": "spring.thymeleaf.devtools.restart.enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.thymeleaf.devtools.restart.enabled."
+    }
+  ] }

@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-@Controller
+@RestController
 public class MainController {
 
     private final UserRepository userRepository;
@@ -45,7 +45,6 @@ public class MainController {
     }
 
     @PostMapping("/signup")
-    @ResponseBody
     public ResponseResult SignUpSubmit(@RequestParam(value = "file", required = false) MultipartFile file,
                         @ModelAttribute User user) {
         ResponseResult result = new ResponseResult();
@@ -79,7 +78,6 @@ public class MainController {
     }
 
     @PostMapping("/login")
-    @ResponseBody
     public ResponseResult LoginSubmit(@ModelAttribute User user) {
         //userRepository.save(user);
         ResponseResult result = new ResponseResult();

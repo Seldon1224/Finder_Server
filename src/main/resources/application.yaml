@@ -1,7 +1,24 @@
 server:
   port: 8080
+  servlet:
+    session:
+      timeout: 30m
+    encoding:
+      force-response: true
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 500
+  error:
+    path: /error
+
 
 spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 2MB
+      max-request-size: 10MB
   thymeleaf:
     cache: true
     devtools:
